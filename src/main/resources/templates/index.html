@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello to colacloud</h1>
+    <a th:href="@{jump/query}">查询书籍</a>|
+    <a th:href="@{jump/add}">增加书籍</a>|
+    <a th:href="@{jump/delete}">删除书籍</a>
+
+    <form action="/login">
+        Username:   <input type="text" name = "Username">
+        Password:   <input type="password" name = "Password">
+                    <input type="submit" value="login">
+    </form>
+
+    <p th:text="${msg}">messgae</p>
+
+</body>
+</html>
