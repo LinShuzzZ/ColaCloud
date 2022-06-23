@@ -13,6 +13,12 @@ public class RoleOrFilter extends AuthorizationFilter
             throws Exception {
         System.out.println("调用自定义的权限过滤");
 
+        /*
+         * 用于测试git提交的注释
+         * 注释时间 16:00
+         * 
+        */
+
         Subject subject = this.getSubject(request, response);
         
         String[] perms = (String[]) mappedValue;
